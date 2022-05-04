@@ -1,0 +1,8 @@
+#snowday-banner {
+  padding: 8px 15px;
+  display: block;
+  width: 100%;
+}
+#snowday-banner p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    _hint:
+        label: ''
+        type: partial
+        path: $/albrightlabs/snowday/models/settings/_hint.htm
+    show_showday:
+        label: Show message
+        comment: When checked, a banner will be displayed at the top of the website
+        type: checkbox
+    snowday_message:
+        label: Message content
+        commentAbove: This message will be shown at the top of the website in the snow day banner
+        type: richeditor
+        toolbarButtons: align|fontSize||bold|italic|underline||insertLink||html
+        cssClass: field-indent
+        trigger:
+            field: show_showday
+            condition: checked
+            action: show
