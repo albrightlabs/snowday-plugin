@@ -1,7 +1,7 @@
 {
-    "name": "albrightlabs/snowday-plugin",
+    "name": "albrightlabs/appreadme-plugin",
     "type": "october-plugin",
-    "description": "Adds support for quickly adding a \"snow day\" banner at the top of a website.",
+    "description": "Adds support for quickly adding a snow day banner at the top of a website.",
     "require": {
         "composer/installers": "~1.0",
         "october/system": "^2.0"
