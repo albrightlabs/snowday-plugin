@@ -33,6 +33,26 @@ class SnowDay extends ComponentBase
     public function enabled()
     {
         if($settings = Settings::get('show_showday')){
+
+            if(Settings::get('show_before_after', false)){
+
+                $start_date   = date('Y-m-d', strtotime(Settings::get('date_start')));
+                $end_date     = date('Y-m-d', strtotime(Settings::get('date_end')));
+                $current_date = date('Y-m-d');
+
+                trace_log($start_date);
+                trace_log($end_date);
+                trace_log($current_date);
+
+                if(($current_date >= $start_date || $start_date == '1970-01-01') && ($current_date <= $end_date || $end_date == '1970-01-01')){
+                    return true;
+                }
+                else {
+                    return false;
+                }
+
+            }
+
             return true;
         }
 

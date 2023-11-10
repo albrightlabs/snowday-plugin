@@ -11,6 +11,35 @@ fields:
         label: Show message
         comment: When checked, a banner will be displayed at the top of the website
         type: checkbox
+    show_before_after:
+        label: Show between two dates
+        comment: When checked, a banner will only be displayed if the current date is between those provided
+        type: checkbox
+        cssClass: field-indent
+        trigger:
+            field: show_showday
+            condition: checked
+            action: show
+    date_start:
+        label: Start date
+        type: datepicker
+        mode: date
+        span: auto
+        cssClass: field-indent
+        trigger:
+            field: show_before_after
+            condition: checked
+            action: show
+    date_end:
+        label: End date
+        type: datepicker
+        mode: date
+        span: auto
+        cssClass: field-indent
+        trigger:
+            field: show_before_after
+            condition: checked
+            action: show
     snowday_message:
         label: Message content
         commentAbove: This message will be shown at the top of the website in the snow day banner

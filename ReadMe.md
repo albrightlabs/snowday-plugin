@@ -23,6 +23,7 @@ You'll need to add the component 'Snow Day Banner' to your theme. It is recommen
 
 ## ⚙️ Explanation of settings
 * Enable the Snow Day Banner's visibility
+* Set the Snow Day Banner to display after and/or before specific dates
 * Manage the content of the banner (supports raw HTML; it's recommended to keep the banner simple)
 * Set whether the banner can be hidden
 * Add any custom CSS
